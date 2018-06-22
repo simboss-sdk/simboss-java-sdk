@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+    <appender name="rootAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/home/admin/simboss-java-sdk/logs/root.log"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
+        <param name="encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS},%p,%c,%m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="DEBUG"/>
+        <appender-ref ref="rootAppender"/>
+    </root>
+
+    <appender name="httpAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/home/admin/simboss-java-sdk/logs/root.log"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
+        <param name="encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss},%p,%c,%m%n" />
+        </layout>
+    </appender>
+
+    <logger name="com.ibilling.dao.interceptor.DeviceStatusUpdateInterceptor"
+            additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="httpAppender"/>
+    </logger>
+
+</log4j:configuration> 
