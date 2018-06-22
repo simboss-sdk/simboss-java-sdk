@@ -65,7 +65,7 @@ SimbossClient client1 = new SimbossClient(confIn).init();
 
 | API 名称               |           请求参                 |  返回值                                  |
 | --------------------- | :-----------------------------: | :--------------------------------------: |
-|1.1 账户总览接口         | UserDashboardGetRequest         | SimbossResponse\\<DashboardDTO\\>          |
+|1.1 账户总览接口         | UserDashboardGetRequest         | SimbossResponse\<DashboardDTO\>          |
 |2.1 批量卡详情			 | DeviceDetailBatchRequest        | SimbossResponse\<List\<DeviceDetailDTO\>\>   |
 |2.2 单卡详情				 | DeviceDetailRequest             | SimbossResponse\<DeviceDetailDTO\>         |
 |2.3 单卡已订购套餐列表	 | DeviceOrderedPlansRequest       | SimbossResponse\<List\<OrderedPlansDTO\>\>   |
