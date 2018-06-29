@@ -88,7 +88,7 @@ SimbossClient client1 = new SimbossClient(confIn).init();
 |5.2 短信查询             | SmsListRequest                  | SimbossResponse\<SmsListDTO\>              |
 
 ## 源码说明 
-- jdk1.7 或更改
+- 仅支持jdk1.7 或更高
 - 单元测试类：src/test/java/com/simboss/sdk/test
 
 
