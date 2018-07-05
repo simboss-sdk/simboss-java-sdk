@@ -29,7 +29,7 @@ public class RealnameSubmitRealnameRequest extends ThreeIdCombineDTO implements 
   public TreeMap<String, String> getParam() {
     TreeMap<String, String> map = super.getParam();
     if (name == null) {
-      throw new SimbossException("param status is required");
+      throw new SimbossException("param name is required");
     }
     map.put("name", name);
     if (licenseType == null) {

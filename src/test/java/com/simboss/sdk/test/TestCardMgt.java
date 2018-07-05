@@ -85,7 +85,7 @@ public class TestCardMgt extends TestCase {
   public void testDeviceRechargeRecords() {
     DeviceRechargeRecordsRequest request = new DeviceRechargeRecordsRequest();
     request.setIccid("89860401101730528432");
-    SimbossResponse<RechargeRecordsDTO> response = client.excute(request);
+    SimbossResponse<List<RechargeRecordsDTO>> response = client.excute(request);
     logger.info(response.toString());
   }
 
