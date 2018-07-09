@@ -71,7 +71,7 @@ SimbossClient client1 = new SimbossClient(confIn).init();
 |2.3 单卡已订购套餐列表	 | DeviceOrderedPlansRequest       | SimbossResponse\<List\<OrderedPlansDTO\>\>   |
 |2.4 单卡可续费套餐信息	 | DeviceRateplansRequest          | SimbossResponse\<List\<RatePlansDTO\>\>      |
 |2.5 单卡续费				 | DeviceRechargeRequest           | SimbossResponse\<String\>                  |
-|2.6 单卡续费记录			 | DeviceRechargeRecordsRequest    | SimbossResponse\<RechargeRecordsDTO\>      |
+|2.6 单卡续费记录			 | DeviceRechargeRecordsRequest    | SimbossResponse\<List\<RechargeRecordsDTO\>\>      |
 |2.7 实时连接状态查询		 | DeviceGprsStatusRequest         | SimbossResponse\<DeviceGprsStatusDTO\>     |
 |2.8 实时用户状态查询		 | DeviceUserStatusRequest         | SimbossResponse\<DeviceUserStatusDTO\>     |
 |2.9 设备实时开关机状态查询 | DeviceRunningStatusRequest      | SimbossResponse\<DeviceRunningStatusDTO\>  |
