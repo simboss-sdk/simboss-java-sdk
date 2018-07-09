@@ -16,9 +16,9 @@ simboss-java-sdk
 
 - Gradle构建的项目
 
-```json
+```gradle
 dependencies {
-   compile('com.simboss.sdk:simboss-java-sdk:1.1.0')
+   compile('com.simboss.sdk:simboss-java-sdk:1.0.0')
 }
 ```
 
