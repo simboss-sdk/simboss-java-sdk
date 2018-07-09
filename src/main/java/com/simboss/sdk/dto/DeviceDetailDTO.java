@@ -10,14 +10,14 @@ public class DeviceDetailDTO implements Serializable {
   /**
    * iccid
    *
-   * @ref https://baike.baidu.com/item/iccid/5181544
+   * see: https://baike.baidu.com/item/iccid/5181544
    */
   private String iccid;
 
   /**
    * imsi
    *
-   * @ref https://baike.baidu.com/item/imsi/307249
+   * see: https://baike.baidu.com/item/imsi/307249
    */
   private String imsi;
 
