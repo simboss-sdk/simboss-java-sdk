@@ -4,7 +4,7 @@
     <groupId>com.simboss.sdk</groupId>
     <artifactId>simboss-java-sdk</artifactId>
     <version>1.0.0</version>
-    <url>https://github.com/simboss/simboss-java-sdk</url>
+    <url>https://github.com/simboss-sdk/simboss-java-sdk</url>
     <name>simboss-java-sdk</name>
     <description>simboss java sdk</description>
 
