@@ -12,6 +12,7 @@ import com.simboss.sdk.dto.RatePlansDTO;
 import com.simboss.sdk.dto.RatePlanSummaryDTO;
 import com.simboss.sdk.dto.RechargeRecordsDTO;
 import com.simboss.sdk.request.DeviceCancelTestingRequest;
+import com.simboss.sdk.request.DeviceDailyUsageByDateRangeRequest;
 import com.simboss.sdk.request.DeviceDailyUsageRequest;
 import com.simboss.sdk.request.DeviceDetailBatchRequest;
 import com.simboss.sdk.request.DeviceDetailRequest;
@@ -43,7 +44,7 @@ public class TestCardMgt extends TestCase {
 
   private Logger logger = LoggerFactory.getLogger(TestCardMgt.class);
 
-  private static SimbossClient client = new SimbossClient("10242017520", "2aa9382a45d3092f24fe2a0325f28200").init();
+  private static SimbossClient client = new SimbossClient("http://localhost:8089/", "10242014246", "583484b1622ed3eac209da8656ed057d").init();
 
   public void testDeviceDetail() {
     DeviceDetailRequest request = new DeviceDetailRequest();
@@ -129,6 +130,15 @@ public class TestCardMgt extends TestCase {
     DeviceDailyUsageRequest request = new DeviceDailyUsageRequest();
     request.setIccid("89860401101730528432");
     request.setDate(DateTimeUtil.addDate(new Date(), -1));
+    SimbossResponse<DailyUsageDTO> response = client.excute(request);
+    logger.info(response.toString());
+  }
+
+  public void testDeviceDailyUsageByDateRange() {
+    DeviceDailyUsageByDateRangeRequest request = new DeviceDailyUsageByDateRangeRequest();
+    request.setIccid("898607B8101700342325");
+    request.setStartDate(DateTimeUtil.addDate(new Date(), -10));
+    request.setEndDate(new Date());
     SimbossResponse<DailyUsageDTO> response = client.excute(request);
     logger.info(response.toString());
   }

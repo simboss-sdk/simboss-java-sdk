@@ -50,6 +50,8 @@ public class UriConstants {
 
   public static final String URI_DEVICE_DAILY_USAGE = properties.getProperty("uri.device.daily.usage", "/2.0/device/dailyUsage");
 
+  public static final String URI_DEVICE_DAILY_USAGE_BY_DATE_RANGE = properties.getProperty("uri.device.daily.usage.rangedate", "/2.0/device/dailyUsageByDateRange");
+
   public static final String URI_DEVICE_CANCEL_TESTING = properties.getProperty("uri.device.cancel.testing", "/2.0/device/cancelTesting");
 
   public static final String URI_DEVICE_MEMO_UPDATE = properties.getProperty("uri.device.memo.update", "/2.0/device/memo/update");
