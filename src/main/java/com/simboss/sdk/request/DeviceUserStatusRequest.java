@@ -2,18 +2,16 @@ package com.simboss.sdk.request;
 
 import com.google.gson.reflect.TypeToken;
 import com.simboss.sdk.constant.UriConstants;
-import com.simboss.sdk.dto.DeviceGprsStatusDTO;
+import com.simboss.sdk.dto.DeviceUserStatusDTO;
 import com.simboss.sdk.dto.ThreeIdCombineDTO;
 import com.simboss.sdk.response.SimbossResponse;
-
 import java.lang.reflect.Type;
 import java.util.TreeMap;
 
 /**
- * 基础类
- * Created by Abel 2018-06-20.
+ * 基础类 Created by Abel 2018-06-20.
  **/
-public class DeviceUserStatusRequest extends ThreeIdCombineDTO implements SimbossRequest{
+public class DeviceUserStatusRequest extends ThreeIdCombineDTO implements SimbossRequest {
 
   @Override
   public String getUri() {
@@ -28,6 +26,7 @@ public class DeviceUserStatusRequest extends ThreeIdCombineDTO implements Simbos
 
   @Override
   public Type getResponseType() {
-    return new TypeToken<SimbossResponse<DeviceGprsStatusDTO>>() {}.getType();
+    return new TypeToken<SimbossResponse<DeviceUserStatusDTO>>() {
+    }.getType();
   }
 }

@@ -1,9 +1,7 @@
 package com.simboss.sdk.dto;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class RechargeRecordsDTO implements Serializable {
 
@@ -26,6 +24,26 @@ public class RechargeRecordsDTO implements Serializable {
   private String volumePlanType;
 
   private String volumePlanName;
+
+  private String type;
+
+  private Double aclPolicyWhitePrice;
+
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+  public Double getAclPolicyWhitePrice() {
+    return aclPolicyWhitePrice;
+  }
+
+  public void setAclPolicyWhitePrice(Double aclPolicyWhitePrice) {
+    this.aclPolicyWhitePrice = aclPolicyWhitePrice;
+  }
 
   public String getSequence() {
     return sequence;

@@ -22,6 +22,36 @@ public class RatePlansDTO implements Serializable {
 
   private Boolean unlimitedVolume;
 
+  private Integer rechargeUnit;
+
+  private Double aclPolicyWhitePrice;
+
+  private Boolean useCountAsVolume;
+
+  public Integer getRechargeUnit() {
+    return rechargeUnit;
+  }
+
+  public void setRechargeUnit(Integer rechargeUnit) {
+    this.rechargeUnit = rechargeUnit;
+  }
+
+  public Double getAclPolicyWhitePrice() {
+    return aclPolicyWhitePrice;
+  }
+
+  public void setAclPolicyWhitePrice(Double aclPolicyWhitePrice) {
+    this.aclPolicyWhitePrice = aclPolicyWhitePrice;
+  }
+
+  public Boolean getUseCountAsVolume() {
+    return useCountAsVolume;
+  }
+
+  public void setUseCountAsVolume(Boolean useCountAsVolume) {
+    this.useCountAsVolume = useCountAsVolume;
+  }
+
   public Integer getRatePlanId() {
     return ratePlanId;
   }

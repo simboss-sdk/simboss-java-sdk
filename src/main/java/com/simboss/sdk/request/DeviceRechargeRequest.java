@@ -5,13 +5,11 @@ import com.simboss.sdk.constant.UriConstants;
 import com.simboss.sdk.dto.ThreeIdCombineDTO;
 import com.simboss.sdk.exception.SimbossException;
 import com.simboss.sdk.response.SimbossResponse;
-
 import java.lang.reflect.Type;
 import java.util.TreeMap;
 
 /**
- * 基础类
- * Created by Abel 2018-06-20.
+ * 基础类 Created by Abel 2018-06-20.
  **/
 public class DeviceRechargeRequest extends ThreeIdCombineDTO implements SimbossRequest {
 
@@ -37,7 +35,8 @@ public class DeviceRechargeRequest extends ThreeIdCombineDTO implements SimbossR
 
   @Override
   public Type getResponseType() {
-    return new TypeToken<SimbossResponse>() {}.getType();
+    return new TypeToken<SimbossResponse>() {
+    }.getType();
   }
 
   private Integer ratePlanId;
@@ -45,6 +44,16 @@ public class DeviceRechargeRequest extends ThreeIdCombineDTO implements SimbossR
   private Integer month;
 
   private String externalOrder;
+
+  private String appKey;
+
+  public String getAppKey() {
+    return appKey;
+  }
+
+  public void setAppKey(String appKey) {
+    this.appKey = appKey;
+  }
 
   public Integer getRatePlanId() {
     return ratePlanId;

@@ -7,16 +7,13 @@ import com.simboss.sdk.dto.ThreeIdCombineDTO;
 import com.simboss.sdk.exception.SimbossException;
 import com.simboss.sdk.response.SimbossResponse;
 import com.simboss.sdk.utils.FileUtil;
-
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.util.TreeMap;
 
 /**
- * 基础类
- * Created by Abel 2018-06-20.
+ * 基础类 Created by Abel 2018-06-20.
  **/
 public class RealnameSubmitRealnameRequest extends ThreeIdCombineDTO implements SimbossRequest {
 
@@ -84,6 +81,16 @@ public class RealnameSubmitRealnameRequest extends ThreeIdCombineDTO implements 
   private String pic2;
 
   private String pic3;
+
+  private String deviceid;
+
+  public String getDeviceid() {
+    return deviceid;
+  }
+
+  public void setDeviceid(String deviceid) {
+    this.deviceid = deviceid;
+  }
 
   public String getName() {
     return name;

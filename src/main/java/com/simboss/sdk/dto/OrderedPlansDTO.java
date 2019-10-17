@@ -1,11 +1,10 @@
 package com.simboss.sdk.dto;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class OrderedPlansDTO implements Serializable {
+
+  private String status;
 
   private Integer ratePlanId;
 
@@ -28,6 +27,24 @@ public class OrderedPlansDTO implements Serializable {
   private String expirationDate;
 
   private Boolean unlimitedVolume;
+
+  private Boolean useCountAsVolume;
+
+  public String getStatus() {
+    return status;
+  }
+
+  public void setStatus(String status) {
+    this.status = status;
+  }
+
+  public Boolean getUseCountAsVolume() {
+    return useCountAsVolume;
+  }
+
+  public void setUseCountAsVolume(Boolean useCountAsVolume) {
+    this.useCountAsVolume = useCountAsVolume;
+  }
 
   public Integer getRatePlanId() {
     return ratePlanId;
