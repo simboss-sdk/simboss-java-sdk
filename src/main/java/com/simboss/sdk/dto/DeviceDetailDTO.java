@@ -28,7 +28,6 @@ public class DeviceDetailDTO implements Serializable {
 
   /**
    * 运营商
-   *
    */
   private String carrier;
 
@@ -39,13 +38,11 @@ public class DeviceDetailDTO implements Serializable {
 
   /**
    * 状态
-   *
    */
   private String status;
 
   /**
    * 设备状态
-   *
    */
   private String deviceStatus;
 
@@ -143,6 +140,46 @@ public class DeviceDetailDTO implements Serializable {
    *
    */
   private List<String> functions;
+
+  private String orgName;
+
+  private String imeiStatus;
+
+  private Double speedLimit;
+
+  private Boolean useCountAsVolume;
+
+  public String getOrgName() {
+    return orgName;
+  }
+
+  public void setOrgName(String orgName) {
+    this.orgName = orgName;
+  }
+
+  public String getImeiStatus() {
+    return imeiStatus;
+  }
+
+  public void setImeiStatus(String imeiStatus) {
+    this.imeiStatus = imeiStatus;
+  }
+
+  public Double getSpeedLimit() {
+    return speedLimit;
+  }
+
+  public void setSpeedLimit(Double speedLimit) {
+    this.speedLimit = speedLimit;
+  }
+
+  public Boolean getUseCountAsVolume() {
+    return useCountAsVolume;
+  }
+
+  public void setUseCountAsVolume(Boolean useCountAsVolume) {
+    this.useCountAsVolume = useCountAsVolume;
+  }
 
   public String getIccid() {
     return iccid;
