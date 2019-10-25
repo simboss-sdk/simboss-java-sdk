@@ -10,7 +10,7 @@ simboss-java-sdk
 <dependency>
     <groupId>com.simboss.sdk</groupId>
     <artifactId>simboss-java-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
@@ -18,7 +18,7 @@ simboss-java-sdk
 
 ```gradle
 dependencies {
-   compile('com.simboss.sdk:simboss-java-sdk:1.0.0')
+   compile('com.simboss.sdk:simboss-java-sdk:1.1.0')
 }
 ```
 
