@@ -39,6 +39,7 @@ import java.util.concurrent.Future;
  * Created by Abel 2018-06-20.
  **/
 public class SimbossClient {
+  
 
   private Logger logger = LoggerFactory.getLogger(SimbossClient.class);
 
