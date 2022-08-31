@@ -29,6 +29,17 @@ public class RechargeRecordsDTO implements Serializable {
 
   private Double aclPolicyWhitePrice;
 
+
+  private Double networkFee;
+
+  public Double getNetworkFee() {
+    return networkFee;
+  }
+
+  public void setNetworkFee(Double networkFee) {
+    this.networkFee = networkFee;
+  }
+
   public String getType() {
     return type;
   }

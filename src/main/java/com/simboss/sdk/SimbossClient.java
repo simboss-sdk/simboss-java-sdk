@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.simboss.sdk.conf.SimbossConfig;
 import com.simboss.sdk.exception.SimbossException;
+import com.simboss.sdk.request.DeviceModifyDeviceStatusRequest;
 import com.simboss.sdk.request.SimbossRequest;
 import com.simboss.sdk.response.SimbossResponse;
 import com.simboss.sdk.utils.SignatureUtil;

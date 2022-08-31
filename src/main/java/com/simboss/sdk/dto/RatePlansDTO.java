@@ -28,6 +28,32 @@ public class RatePlansDTO implements Serializable {
 
   private Boolean useCountAsVolume;
 
+  /**
+   * 最大可续费份数
+   */
+  private Integer maxRechargePeriod;
+
+  /**
+   * 网络功能费用
+   */
+  private Double networkFee;
+
+  public Integer getMaxRechargePeriod() {
+    return maxRechargePeriod;
+  }
+
+  public void setMaxRechargePeriod(Integer maxRechargePeriod) {
+    this.maxRechargePeriod = maxRechargePeriod;
+  }
+
+  public Double getNetworkFee() {
+    return networkFee;
+  }
+
+  public void setNetworkFee(Double networkFee) {
+    this.networkFee = networkFee;
+  }
+
   public Integer getRechargeUnit() {
     return rechargeUnit;
   }

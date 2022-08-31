@@ -82,6 +82,33 @@ public class CardPoolDTO implements Serializable{
    */
   private Integer activationReadyCount;
 
+
+  /**
+   * 流量池平台
+   */
+  private String poolPlatform;
+
+  /**
+   * VPDN
+   */
+  private Boolean vpdn;
+
+  public String getPoolPlatform() {
+    return poolPlatform;
+  }
+
+  public void setPoolPlatform(String poolPlatform) {
+    this.poolPlatform = poolPlatform;
+  }
+
+  public Boolean getVpdn() {
+    return vpdn;
+  }
+
+  public void setVpdn(Boolean vpdn) {
+    this.vpdn = vpdn;
+  }
+
   public Long getId() {
     return id;
   }

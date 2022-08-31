@@ -34,9 +34,19 @@ public class UriConstants {
 
   public static final String URI_DEVICE_RATEPLANS = properties.getProperty("uri.device.rateplans", "/2.0/device/rateplans");
 
+  public static final String URI_DEVICE_RATEPLANS_BATCH = properties.getProperty("uri.device.rateplans.batch", "/2.0/device/rateplans/batch");
+
+
   public static final String URI_DEVICE_RECHARGE = properties.getProperty("uri.device.recharge", "/2.0/device/recharge");
 
+
+  public static final String URI_DEVICE_RECHARGE_BATCH = properties.getProperty("uri.device.recharge.batch", "/2.0/device/recharge/batch");
+
+
   public static final String URI_DEVICE_RECHARGE_RECORDS = properties.getProperty("uri.device.recharge.records", "/2.0/device/recharge/records");
+
+  public static final String URI_DEVICE_RECHARGE_RECORDS_BATCH = properties.getProperty("uri.device.recharge.records.batch", "/2.0/device/recharge/records/batch");
+
 
   public static final String URI_DEVICE_GPRS_STATUS = properties.getProperty("uri.device.gprsStatus", "/2.0/device/gprsStatus");
 
@@ -49,6 +59,9 @@ public class UriConstants {
   public static final String URI_DEVICE_MODIFY_DEVICE_STATUS = properties.getProperty("uri.device.modify.device.status", "/2.0/device/modifyDeviceStatus");
 
   public static final String URI_DEVICE_DAILY_USAGE = properties.getProperty("uri.device.daily.usage", "/2.0/device/dailyUsage");
+
+  public static final String URI_DEVICE_DAILY_USAGE_BATCH = properties.getProperty("uri.device.daily.usage.batch", "/2.0/device/dailyUsage/batch");
+
 
   public static final String URI_DEVICE_DAILY_USAGE_BY_DATE_RANGE = properties.getProperty("uri.device.daily.usage.rangedate", "/2.0/device/dailyUsageByDateRange");
 
@@ -67,5 +80,17 @@ public class UriConstants {
   public static final String URI_SMS_SEND = properties.getProperty("uri.sms.send", "/2.0/sms/send");
 
   public static final String URI_SMS_LIST = properties.getProperty("uri.sms.list", "/2.0/sms/list");
+
+  public static final String URI_ICCID_LIST = properties.getProperty("uri.iccid.list", "/2.0/device/iccid/list");
+
+  public static final String URI_DEVICE_ACTIVATE = properties.getProperty("uri.device.activate", "/2.0/device/activate");
+
+  public static final String URI_DEVICE_QUERYNUM = properties.getProperty("uri.device.querynum", "/2.0/device/queryNum");
+
+  public static final String URI_LBS_LOCAL_SEARCH = properties.getProperty("uri.lbs.location.search", "/2.0/lbs/location/search");
+
+
+  public static final String URI_LBS_RECORD_LIST = properties.getProperty("uri.lbs.record.list", "/2.0/lbs/record/list");
+
 
 }

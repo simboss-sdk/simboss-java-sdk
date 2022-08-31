@@ -30,6 +30,27 @@ public class OrderedPlansDTO implements Serializable {
 
   private Boolean useCountAsVolume;
 
+
+  private Long offerId;
+
+  private String sequence;
+
+  public Long getOfferId() {
+    return offerId;
+  }
+
+  public void setOfferId(Long offerId) {
+    this.offerId = offerId;
+  }
+
+  public String getSequence() {
+    return sequence;
+  }
+
+  public void setSequence(String sequence) {
+    this.sequence = sequence;
+  }
+
   public String getStatus() {
     return status;
   }

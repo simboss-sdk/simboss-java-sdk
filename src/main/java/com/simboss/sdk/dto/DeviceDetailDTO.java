@@ -149,6 +149,78 @@ public class DeviceDetailDTO implements Serializable {
 
   private Boolean useCountAsVolume;
 
+  private String imei;
+
+  private Date dateDeactivated;
+
+  private boolean nbCard;
+
+  private String remark1;
+
+
+  private String remark2;
+
+
+  private String remark3;
+
+  private Date smsExpireDate;
+
+  public boolean isNbCard() {
+    return nbCard;
+  }
+
+  public void setNbCard(boolean nbCard) {
+    this.nbCard = nbCard;
+  }
+
+  public String getRemark1() {
+    return remark1;
+  }
+
+  public void setRemark1(String remark1) {
+    this.remark1 = remark1;
+  }
+
+  public String getRemark2() {
+    return remark2;
+  }
+
+  public void setRemark2(String remark2) {
+    this.remark2 = remark2;
+  }
+
+  public String getRemark3() {
+    return remark3;
+  }
+
+  public void setRemark3(String remark3) {
+    this.remark3 = remark3;
+  }
+
+  public Date getSmsExpireDate() {
+    return smsExpireDate;
+  }
+
+  public void setSmsExpireDate(Date smsExpireDate) {
+    this.smsExpireDate = smsExpireDate;
+  }
+
+  public String getImei() {
+    return imei;
+  }
+
+  public void setImei(String imei) {
+    this.imei = imei;
+  }
+
+  public Date getDateDeactivated() {
+    return dateDeactivated;
+  }
+
+  public void setDateDeactivated(Date dateDeactivated) {
+    this.dateDeactivated = dateDeactivated;
+  }
+
   public String getOrgName() {
     return orgName;
   }
