@@ -24,9 +24,9 @@ public class LbsRecordListRequest extends ThreeIdCombineDTO implements SimbossRe
 
   @Override
   public TreeMap<String, String> getParam() {
-    TreeMap map=new TreeMap<>();
+    TreeMap<String, String> map = super.getParam();
     if (pageNo!=null){
-      map.put("pageNo",pageNo);
+      map.put("pageNo",pageNo.toString());
     }
     return map;
   }
