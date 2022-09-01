@@ -3,6 +3,7 @@ package com.simboss.sdk.request;
 import com.google.gson.reflect.TypeToken;
 import com.simboss.sdk.constant.UriConstants;
 import com.simboss.sdk.dto.CardPoolDTO;
+import com.simboss.sdk.dto.ThreeIdCombineDTO;
 import com.simboss.sdk.dto.ThreeIdsCombineDTO;
 import com.simboss.sdk.response.SimbossResponse;
 
@@ -14,7 +15,7 @@ import java.util.TreeMap;
  * 基础类
  * Created by Abel 2018-06-20.
  **/
-public class LbsRecordListRequest extends ThreeIdsCombineDTO implements SimbossRequest {
+public class LbsRecordListRequest extends ThreeIdCombineDTO implements SimbossRequest {
 
   @Override
   public String getUri() {
