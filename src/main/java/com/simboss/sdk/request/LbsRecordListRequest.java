@@ -3,6 +3,7 @@ package com.simboss.sdk.request;
 import com.google.gson.reflect.TypeToken;
 import com.simboss.sdk.constant.UriConstants;
 import com.simboss.sdk.dto.CardPoolDTO;
+import com.simboss.sdk.dto.LbsRecordMapDTO;
 import com.simboss.sdk.dto.ThreeIdCombineDTO;
 import com.simboss.sdk.dto.ThreeIdsCombineDTO;
 import com.simboss.sdk.response.SimbossResponse;
@@ -33,7 +34,7 @@ public class LbsRecordListRequest extends ThreeIdCombineDTO implements SimbossRe
 
   @Override
   public Type getResponseType() {
-    return new TypeToken<SimbossResponse<List<CardPoolDTO>>>() {}.getType();
+    return new TypeToken<SimbossResponse<LbsRecordMapDTO>>() {}.getType();
   }
 
   private Integer pageNo;
