@@ -19,11 +19,7 @@ public class DailyUsageBatchDTO implements Serializable {
    */
   private String iccid;
 
-  /**
-   * imsi
-   *
-   * @ref https://baike.baidu.com/item/imsi/307249
-   */
+
   private String imsi;
 
   /**

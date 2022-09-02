@@ -2,10 +2,7 @@ package com.simboss.sdk.dto;
 
 
 /**
- * 机卡号码详情VO
- *
- * @author wengzhoujun
- * @date 2021/7/7 上午11:37
+ * Created by Abel on 2018/6/21.
  */
 
 

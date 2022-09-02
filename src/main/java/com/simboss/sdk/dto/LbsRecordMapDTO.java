@@ -5,9 +5,7 @@ package com.simboss.sdk.dto;
 import java.util.List;
 
 /**
- * @author aihong
- * @date 2020/4/8
- * @description
+ * Created by Abel on 2018/6/21.
  */
 public class LbsRecordMapDTO {
 

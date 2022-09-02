@@ -4,10 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * com.simboss.model.LbsRecordDTO
- *
- * @author yuezhongxin
- * @date 2019/07/18
+ * Created by Abel on 2018/6/21.
  */
 
 public class LbsRecordDetailDTO implements Serializable {
