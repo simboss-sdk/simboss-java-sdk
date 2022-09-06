@@ -10,7 +10,7 @@ simboss-java-sdk
 <dependency>
     <groupId>com.simboss.sdk</groupId>
     <artifactId>simboss-java-sdk</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
