@@ -18,7 +18,7 @@ simboss-java-sdk
 
 ```gradle
 dependencies {
-   compile('com.simboss.sdk:simboss-java-sdk:1.1.0')
+   compile('com.simboss.sdk:simboss-java-sdk:1.2.0')
 }
 ```
 
