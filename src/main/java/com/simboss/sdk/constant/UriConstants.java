@@ -37,6 +37,9 @@ public class UriConstants {
   public static final String URI_COMBINE_DEVICE_ORDERED_PLANS = properties.getProperty(
     "uri.combine.device.ordered.plans", "/2.0/combine/device/orderedPlans");
 
+  public static final String URI_COMBINE_DEVICE_RECHARGE_BATCH = properties.getProperty(
+    "uri.combine.device.recharge.batch", "/2.0/combine/device/recharge/batch");
+
   public static final String URI_DEVICE_RATEPLANS = properties.getProperty("uri.device.rateplans",
     "/2.0/device/rateplans");
 
