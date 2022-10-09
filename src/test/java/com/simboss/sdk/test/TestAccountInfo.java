@@ -2,6 +2,7 @@ package com.simboss.sdk.test;
 
 import com.simboss.sdk.SimbossClient;
 import com.simboss.sdk.dto.*;
+import com.simboss.sdk.request.CombineDeviceOrderedPlansRequest;
 import com.simboss.sdk.request.UserDashboardGetRequest;
 import com.simboss.sdk.response.SimbossResponse;
 import junit.framework.TestCase;
