@@ -30,6 +30,25 @@ public class OrderedPlansDTO implements Serializable {
 
   private Boolean useCountAsVolume;
 
+  private Double totalDataVolume;
+
+  private Double usageDataVolume;
+
+  public Double getTotalDataVolume() {
+    return totalDataVolume;
+  }
+
+  public void setTotalDataVolume(Double totalDataVolume) {
+    this.totalDataVolume = totalDataVolume;
+  }
+
+  public Double getUsageDataVolume() {
+    return usageDataVolume;
+  }
+
+  public void setUsageDataVolume(Double usageDataVolume) {
+    this.usageDataVolume = usageDataVolume;
+  }
 
   private Long offerId;
 
