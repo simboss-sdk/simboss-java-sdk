@@ -34,6 +34,16 @@ public class OrderedPlansDTO implements Serializable {
 
   private Double usageDataVolume;
 
+  private String predictExpirationDate;
+
+  public String getPredictExpirationDate() {
+    return predictExpirationDate;
+  }
+
+  public void setPredictExpirationDate(String predictExpirationDate) {
+    this.predictExpirationDate = predictExpirationDate;
+  }
+
   public Double getTotalDataVolume() {
     return totalDataVolume;
   }
