@@ -12,7 +12,7 @@ import java.util.TreeMap;
 /**
  * 基础类 Created by Abel 2018-06-20.
  **/
-public class DeviceRateplansRequest extends ThreeIdCombineDTO implements SimbossRequest {
+public class  DeviceRateplansRequest extends ThreeIdCombineDTO implements SimbossRequest {
 
   @Override
   public String getUri() {
@@ -22,8 +22,12 @@ public class DeviceRateplansRequest extends ThreeIdCombineDTO implements Simboss
   @Override
   public TreeMap<String, String> getParam() {
     TreeMap<String, String> map = super.getParam();
+    if (getWithRechargeUnit()!=null){
+      map.put("withRechargeUnit",getWithRechargeUnit().toString());
+    }
     return map;
   }
+
 
   @Override
   public Type getResponseType() {
