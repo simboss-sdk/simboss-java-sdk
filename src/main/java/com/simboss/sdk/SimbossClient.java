@@ -8,6 +8,10 @@ import com.simboss.sdk.request.DeviceModifyDeviceStatusRequest;
 import com.simboss.sdk.request.SimbossRequest;
 import com.simboss.sdk.response.SimbossResponse;
 import com.simboss.sdk.utils.SignatureUtil;
+import java.io.IOException;
+import java.net.ConnectException;
+import java.net.SocketTimeoutException;
+import java.util.concurrent.ExecutionException;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -99,7 +103,18 @@ public class SimbossClient {
         + ", result: " + result);
       Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
       response = gson.fromJson(result, request.getResponseType());
-    } catch (Exception e) {
+    }
+    catch (ExecutionException e){
+      if (e.getCause() instanceof  SocketTimeoutException){
+        SimbossResponse simbossResponse=new SimbossResponse();
+        simbossResponse.setSuccess(false);
+        simbossResponse.setCode("511");
+        simbossResponse.setMessage("server-gateway-timeout");
+        simbossResponse.setDetail("server error: gateway timeout");
+        response= (T) simbossResponse;
+      }
+    }catch (Exception e) {
+
       logger.error(e.getMessage(), e);
       response.setSuccess(false);
       response.setMessage(e.getMessage());
