@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class RechargeRecordsDTO implements Serializable {
 
+  private String iccid;
+
   private String sequence;
 
   private String orderName;
@@ -134,5 +136,13 @@ public class RechargeRecordsDTO implements Serializable {
 
   public void setVolumePlanName(String volumePlanName) {
     this.volumePlanName = volumePlanName;
+  }
+
+  public String getIccid() {
+    return iccid;
+  }
+
+  public void setIccid(String iccid) {
+    this.iccid = iccid;
   }
 }
