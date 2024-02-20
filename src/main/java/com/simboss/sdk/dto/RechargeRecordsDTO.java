@@ -7,6 +7,8 @@ public class RechargeRecordsDTO implements Serializable {
 
   private String iccid;
 
+  private String externalOrder;
+
   private String sequence;
 
   private String orderName;
@@ -144,5 +146,13 @@ public class RechargeRecordsDTO implements Serializable {
 
   public void setIccid(String iccid) {
     this.iccid = iccid;
+  }
+
+  public String getExternalOrder() {
+    return externalOrder;
+  }
+
+  public void setExternalOrder(String externalOrder) {
+    this.externalOrder = externalOrder;
   }
 }
